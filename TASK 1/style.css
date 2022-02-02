@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+*{
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Libre Baskerville', serif;
+    background-color: #1E1F31;
+    overflow-x: hidden;
+}
+
+.wrapper
+{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header{
+    padding:  50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo1 p{
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    color: rgb(231, 13, 13);
+    text-align: auto;
+    font-size: 30px;
+    transition: all ease 0.5s;
+}
+
+header ul li
+{
+   list-style: none;
+   display: inline-block;
+   margin: 0 15px; 
+}
+
+header ul li a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all ease 0.5s;
+}
+
+header ul li a:hover{
+    color: #f09053;
+}
+
+header ul li a.btn1
+{
+    display: inline-block;
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f09053;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: all ease 0.5s;
+}
+
+header ul li a.btn1:hover{
+    background-color: #dd5607;
+}
+
+
+
+
+
+.content
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 100px 0;
+}
+
+.about
+{
+    width: 50%;
+    padding-right: 150px;
+}
+
+.about p{
+    font-size: 20px;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.about p span{
+    color: blueviolet;
+}
+
+.about a{
+  position: relative;
+  display: inline-block;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 16px 30px;
+  letter-spacing: 2px;
+  margin-top: 50px;
+}
+
+.about a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #1fdf0d;
+    z-index: -1;
+    transition:  all ease 0.5s;
+}
+
+.about a:hover:before{
+    width: 100%; 
+}
+
+.img
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(520px, #1599d68c, transparent 50%);
+    margin-top: -50px;
+}
+
+.email
+{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.social-icons
+{
+    height: 100%;
+    animation: rotation 60s linear infinite; 
+}
+
+@keyframes rotation {
+     100%{
+         transform: rotate(360deg);
+     }
+}
+
+.social-icons img
+{
+    position: absolute;
+}
+
+.social-icons img:nth-child(1)
+{
+    top: 0%;
+    left: 44%;
+}
+
+.social-icons img:nth-child(2)
+{
+    top: 30%;
+    right: 10%;
+}
+
+.social-icons img:nth-child(3)
+{
+    top: 70%;
+    left: 40%;
+}
+
+.social-icons img:nth-child(4)
+{
+    top: 30%;
+    left: 5%;
+}
+
+.social-icons img:nth-child(5)
+{
+    top: 70%;
+    left: 75%;
+}
+
